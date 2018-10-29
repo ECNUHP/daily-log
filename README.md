@@ -3,3 +3,29 @@
 具体命令如下：
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple requests   
 request 就是你需要下载的包名称
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+有用的网站：
+1.tensorflow包
+https://pypi.org/project/tensorflow/1.1.0/#files
