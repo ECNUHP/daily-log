@@ -5,6 +5,9 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple requests
 request 就是你需要下载的包名称
 
 
+2.
+在Word中优雅地插入Latex公式
+https://www.jianshu.com/p/17ef28b1be49
 
 
 
