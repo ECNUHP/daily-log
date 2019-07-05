@@ -24,3 +24,12 @@ def delete_space(str):
     for c in list :
         str = str.replace(c, '')
     return str
+	
+	
+	
+#跑程序log 记录
+from log import Logger
+
+log = Logger('./run_log/train.log',level='info')
+
+log.logger.info("Created trec_lda_model with fresh parameters.")
