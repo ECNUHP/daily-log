@@ -14,3 +14,13 @@ def reprocess(sentence):
     for i in list1:
         sentence=sentence.replace(i,'')
     return sentence
+
+	
+#函数用于删掉字符串中所有的空白字符
+def delete_space(str):
+    import re
+    pattern = re.compile(r'\s')
+    list= re.findall(pattern, str)
+    for c in list :
+        str = str.replace(c, '')
+    return str
