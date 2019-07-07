@@ -33,3 +33,20 @@ from log import Logger
 log = Logger('./run_log/train.log',level='info')
 
 log.logger.info("Created trec_lda_model with fresh parameters.")
+
+#删除列表重复元素，不改变列表元素顺序
+
+m = ['b','c','d','b','c','a','a']
+n = sorted(set(m),key=m.index)
+
+#结巴分词，带词性识别
+import jieba.posseg as pseg
+
+seg=pseg.cut( line.strip())
+for ele in seg :
+	if ele.word in ciku_dict or ele.flag in tag_list:
+	...
+	
+
+
+
