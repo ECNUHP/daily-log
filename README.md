@@ -9,6 +9,10 @@ request 就是你需要下载的包名称
 在Word中优雅地插入Latex公式
 https://www.jianshu.com/p/17ef28b1be49
 
+3.
+tensorflow 介绍文档
+https://www.w3cschool.cn/tensorflow_python/tf_nn_bidirectional_dynamic_rnn.html
+
 
 
 
