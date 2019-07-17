@@ -48,5 +48,8 @@ for ele in seg :
 	...
 	
 
-
+#统计列表中有多少个不同的元素
+import numpy as np
+list=[1,2,3,4,3,4,5,1]
+l=len(np.unique(list))
 
