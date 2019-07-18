@@ -13,6 +13,10 @@ https://www.jianshu.com/p/17ef28b1be49
 tensorflow 介绍文档
 https://www.w3cschool.cn/tensorflow_python/tf_nn_bidirectional_dynamic_rnn.html
 
+4.查看gpu使用情况命令：
+nvidia-smi
+
+
 
 
 
