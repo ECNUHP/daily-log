@@ -53,3 +53,11 @@ import numpy as np
 list=[1,2,3,4,3,4,5,1]
 l=len(np.unique(list))
 
+
+
+#两个列表同时打乱，相对位置保持不变
+from sklearn.utils import shuffle
+
+x=[1,2,3]
+y=[4,5,6]
+x,y=shuffle(x,y)
