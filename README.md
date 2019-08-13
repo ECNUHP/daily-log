@@ -16,26 +16,11 @@ https://www.w3cschool.cn/tensorflow_python/tf_nn_bidirectional_dynamic_rnn.html
 4.查看gpu使用情况命令：
 nvidia-smi
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5.使用linux服务器时提示：no module conda
+可以安装miniconda
+安装地址：
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+下载之后直接bash 命令安装
 
 有用的网站：
 1.tensorflow包
