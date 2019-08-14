@@ -25,3 +25,10 @@ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 有用的网站：
 1.tensorflow包
 https://pypi.org/project/tensorflow/1.1.0/#files
+
+
+nohup python -u transformer_main.py > nohup.log 2>&1 &
+因为python会将日志放到缓存中，等程序执行完成后或者日志达到一定的长度到才写入文件，
+这个时候加参数“-u”就可以用
+tail -f nohup.log来实时查看日志了。
+
