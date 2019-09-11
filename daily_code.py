@@ -75,8 +75,12 @@ def check_chinese_str(content):
             return False
     return True
 
+列表：
+
+0第一个元素，-1最后一个元素，
 
 
+-len第一个元 素，len-1最后一个元素
 
 
 
