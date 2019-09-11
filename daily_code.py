@@ -61,3 +61,27 @@ from sklearn.utils import shuffle
 x=[1,2,3]
 y=[4,5,6]
 x,y=shuffle(x,y)
+
+def is_chinese(uchar):
+    """判断一个unicode是否是汉字"""
+    if uchar >= u'\u4e00' and uchar <= u'\u9fa5':
+        return True
+    else:
+        return False
+
+def check_chinese_str(content):
+    for char in content:
+        if not  is_chinese(char):
+            return False
+    return True
+
+
+
+
+
+
+
+
+
+
+
