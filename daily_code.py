@@ -82,7 +82,18 @@ def check_chinese_str(content):
 
 -len第一个元 素，len-1最后一个元素
 
+import os
 
+eword_list=[]
+rootdir = r'C:\Users\hp\Desktop\情感词语'
+list = os.listdir(rootdir) #列出文件夹下所有的目录与文件
+for i in range(0,len(list)):
+    path = os.path.join(rootdir,list[i])
+    with open(path,'r',encoding='utf-8')as infile:
+
+		
+		
+		
 
 
 
