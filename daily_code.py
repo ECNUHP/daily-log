@@ -91,9 +91,13 @@ for i in range(0,len(list)):
     path = os.path.join(rootdir,list[i])
     with open(path,'r',encoding='utf-8')as infile:
 
-		
-		
-		
+#列表去重并按照原始列表的顺序排列
+list1 = ['是恶疾','但是','但是','可是','但是']
+list2 = list(set(list1))
+
+print(list2)
+list2.sort(key = list1.index)
+print(list2)	
 
 
 
