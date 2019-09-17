@@ -102,5 +102,24 @@ print(list2)
 
 
 
+#多个对象利用字典捆绑，方便处理
+with open('./seg/all_message.txt', 'r', encoding='utf-8') as f:
+    post = [line.strip() for line in f.readlines()]
+with open('./seg/all_response.txt', 'r', encoding='utf-8') as f:
+    response = [line.strip() for line in f.readlines()]
+with open('./seg/keywords.txt', 'r', encoding='utf-8') as f:
+    keyword = [line.strip() for line in f.readlines()]
+
+with open('./seg/post_topic_words.txt', 'r', encoding='utf-8') as f:
+    post_topic_words = [line.strip() for line in f.readlines()]
+with open('./seg/emotion_label.txt', 'r', encoding='utf-8') as f:
+    emotion_label = [line.strip() for line in f.readlines()]
+
+
+data = []
+for p, r, k,pt,el in zip(post, response, keyword,post_topic_words,emotion_label):
+    data.append({'post': p, 'response': r, 'keyword': k,'post_topic_words':pt,'emotion_label':el})
+
+
 
 
