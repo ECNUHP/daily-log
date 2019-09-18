@@ -120,6 +120,7 @@ data = []
 for p, r, k,pt,el in zip(post, response, keyword,post_topic_words,emotion_label):
     data.append({'post': p, 'response': r, 'keyword': k,'post_topic_words':pt,'emotion_label':el})
 
-
-
+#对列表元素逆置
+word_list=['1','2','3']
+word_list=list(reversed(word_list))
 
