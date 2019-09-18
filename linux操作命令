@@ -1,0 +1,26 @@
+ bert topic relevance 0.889325
+
+查看虚拟环境命令：
+conda info --envs
+查看cuda版本
+
+nvcc -V
+
+查看GPU的使用情况
+
+nvidia-smi -l
+
+
+encoder = BertEncoder()
+output_enc, _ = encoder(inputs=source_text_ids)
+
+decoder = TransformerDecoder(vocab_size=1000)
+outputs = decoder(decoding_strategy='train_greedy',   # teacher-forcing decoding (for training)
+                  inputs=embedding_fn(target_text_ids))
+
+
+				  
+nohup python -u transformer_main.py > nohup.log 2>&1 &
+因为python会将日志放到缓存中，等程序执行完成后或者日志达到一定的长度到才写入文件，
+这个时候加参数“-u”就可以用
+tail -f nohup.log来实时查看日志了。
