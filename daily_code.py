@@ -124,3 +124,26 @@ for p, r, k,pt,el in zip(post, response, keyword,post_topic_words,emotion_label)
 word_list=['1','2','3']
 word_list=list(reversed(word_list))
 
+
+
+
+命令行解析模块：
+
+import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--ground_truth',default='test_target.txt',help="ground truth text file, one example per line")
+    parser.add_argument('--predicted',default='res.txt' ,help="predicted text file, one example per line")
+    parser.add_argument('--embeddings',default='w2v.pkl' ,help="embeddings bin file")
+    args = parser.parse_args()
+	
+    w2v_file=open(args.embeddings,'rb')
+
+
+
+
+
+
+
+
+
+
