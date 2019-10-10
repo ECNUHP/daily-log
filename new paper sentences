@@ -16,3 +16,4 @@ It should be emphasized that
 要强调的一点是......
 Nevertheless
 然而
+the high-level decoder adopts three attention models to attentively read different encoded state sequences
