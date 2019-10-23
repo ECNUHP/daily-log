@@ -141,8 +141,8 @@ import argparse
 
 
 
-
-
+#
+dropout=(0 if numLayers==1 else dropout)
 
 
 
