@@ -151,6 +151,6 @@ import argparse
 #
 dropout=(0 if numLayers==1 else dropout)
 
-
-
+#print 不换行输出
+print (x,end = '')  不换行输出
 
