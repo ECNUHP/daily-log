@@ -15,6 +15,13 @@ def reprocess(sentence):
         sentence=sentence.replace(i,'')
     return sentence
 
+
+#提取连续的数字
+    import re
+    number_pattern = re.compile('\d+')
+
+
+
 	
 #函数用于删掉字符串中所有的空白字符
 def delete_space(str):
