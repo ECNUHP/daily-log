@@ -27,3 +27,6 @@ kill -9 PID
 用
 pwd
 命令来查看当前所处路径
+
+编辑linux文本文件 命令nano更方便
+nano 
