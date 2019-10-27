@@ -154,3 +154,9 @@ dropout=(0 if numLayers==1 else dropout)
 #print 不换行输出
 print (x,end = '')  不换行输出
 
+
+读取并且遍历csv文件
+import pandas as pd
+pd_all = pd.read_csv( r'C:\Users\hp\Desktop\FQA\financezhidao_filter.csv',header=0)
+
+for idx,item in pd_all.iterrows():
