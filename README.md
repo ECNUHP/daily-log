@@ -32,3 +32,5 @@ nohup python -u transformer_main.py > nohup.log 2>&1 &
 这个时候加参数“-u”就可以用
 tail -f nohup.log来实时查看日志了。
 
+
+linux命令查询
