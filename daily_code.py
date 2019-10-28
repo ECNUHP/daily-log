@@ -160,3 +160,8 @@ import pandas as pd
 pd_all = pd.read_csv( r'C:\Users\hp\Desktop\FQA\financezhidao_filter.csv',header=0)
 
 for idx,item in pd_all.iterrows():
+	
+#numpy
+x[:,n]表示在全部数组（维）中取第n个数据，直观来说，x[:,n]就是取所有集合的第n个数据, 即取出第n列数据
+x[n,:]表示在n个数组（维）中取全部数据，直观来说，x[n,:]就是取第n集合的所有数据, 即取出第n行数据
+
