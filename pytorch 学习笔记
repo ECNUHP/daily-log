@@ -1,0 +1,22 @@
+
+1.tensor 的变量 cpu——gpu 设备转换
+# is_available 函数判断是否有cuda可以使用
+# ``torch.device``将张量移动到指定的设备中
+
+x = torch.randn(1)
+if torch.cuda.is_available():
+    device = torch.device("cuda")          # a CUDA 设备对象
+    y = torch.ones_like(x, device=device)  # 直接从GPU创建张量
+    x = x.to(device)                       # 或者直接使用``.to("cuda")``将张量移动到cuda中
+    z = x + y
+    print(z)
+    print(z.to("cpu", torch.double))
+
+2.#译者注：torch.view 与Numpy的reshape类似
+x = torch.randn(4, 4)
+y = x.view(16)
+z = x.view(-1, 8)  #  size -1 从其他维度推断
+print(x.size(), y.size(), z.size())  
+“torch.Size([4, 4]) torch.Size([16]) torch.Size([2, 8])”
+    
+    
