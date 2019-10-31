@@ -165,3 +165,13 @@ for idx,item in pd_all.iterrows():
 x[:,n]表示在全部数组（维）中取第n个数据，直观来说，x[:,n]就是取所有集合的第n个数据, 即取出第n列数据
 x[n,:]表示在n个数组（维）中取全部数据，直观来说，x[n,:]就是取第n集合的所有数据, 即取出第n行数据
 
+
+if else 简写：
+idList = self.trainIdList if type=='train' else self.testIdList
+
+
+
+
+
+
+
