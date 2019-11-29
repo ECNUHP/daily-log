@@ -173,13 +173,13 @@ idList = self.trainIdList if type=='train' else self.testIdList
 #batch_generator
 
 
-def batch_generator(data, batch_size, shuffle=True):
+def batch_generator(data, batch_size, shuffle=False):
     data_size=len(data)
     if shuffle:
         import random
         random.shuffle(data)
     if data_size<=batch_size:
-        yield [data]
+        return [data]
     else:
         batch_list=[]
         batch_count = int(data_size /batch_size)+1
@@ -188,12 +188,11 @@ def batch_generator(data, batch_size, shuffle=True):
             end=start+batch_size
             if start<data_size:
                 batch_list.append(data[start:end])
-        yield (batch_list)
+        return batch_list
 
-y=[1,2,3,4,5,6,7,8,9,9,0,0,0,1,22,3,2,1]
-for e in batch_generator(y,batch_size=4):
+x=[1,12,2,3,4,5]
+for e in batch_generator(x,batch_size=4):
     print(e)
-
 
 
 
