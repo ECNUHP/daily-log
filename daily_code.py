@@ -170,6 +170,40 @@ if else 简写：
 idList = self.trainIdList if type=='train' else self.testIdList
 
 
+#batch_generator
+
+
+def batch_generator(data, batch_size, shuffle=True):
+    data_size=len(data)
+    if shuffle:
+        import random
+        random.shuffle(data)
+    if data_size<=batch_size:
+        yield [data]
+    else:
+        batch_list=[]
+        batch_count = int(data_size /batch_size)+1
+        for i in range(batch_count):
+            start=i*batch_size
+            end=start+batch_size
+            if start<data_size:
+                batch_list.append(data[start:end])
+        yield (batch_list)
+
+y=[1,2,3,4,5,6,7,8,9,9,0,0,0,1,22,3,2,1]
+for e in batch_generator(y,batch_size=4):
+    print(e)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
