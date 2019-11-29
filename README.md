@@ -2,6 +2,7 @@
 对于分类问题的 测试指标，可以参考sklearn，网址如下：
 https://blog.csdn.net/Bazingaea/article/details/90054530
 
+https://blog.csdn.net/lyb3b3b/article/details/84819931
 
 
 1.pip 下载安装文件很慢时可以利用清华的镜像网站，快速下载
