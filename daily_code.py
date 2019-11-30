@@ -196,8 +196,20 @@ for e in batch_generator(x,batch_size=4):
 
 
 
+写入csv文件和xlsx文件的方法
 
+import pandas as pd
+result_list = []
+with open('test.txt','r',encoding='utf-8')as infile:
+    for line in infile:
+        line_list=line.strip().split('\t')
+        line_list[2]=int(line_list[2])
+        result_list.append(line_list)
 
+columns = ["sentence1", "sentence2", "label"]
+dt = pd.DataFrame(result_list, columns=columns)
+dt.to_excel("result_xlsx.xlsx", index=0)
+dt.to_csv("test.csv", index=0)
 
 
 
