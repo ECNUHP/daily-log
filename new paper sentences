@@ -93,6 +93,10 @@ In the following, we refer to that architecture with the abbreviation HBMP.
 To alleviate the problem of
 
 
+The proposed architecture shown in Figure 1 is called
+DRCN which is an abbreviation for Densely-connected Recurrent
+and Co-attentive neural Network. 模型简写介绍
+
 
 
 
