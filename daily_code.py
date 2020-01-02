@@ -212,8 +212,19 @@ dt.to_excel("result_xlsx.xlsx", index=0)
 dt.to_csv("test.csv", index=0)
 
 
+#python操作excel文件.
 
+import xlrd
+workbook1 = xlrd.open_workbook(r'C:\Users\User\Desktop\20191203-对练系统-多意图识别\node.xlsx')
+sheet1=workbook1.sheet_by_name('Sheet1')
+scenery_dict={}
 
+for row in range(sheet1.nrows):
+    if row ==0 or row==7:
+        continue
+    key=sheet1.cell_value(row,0)
+    value=sheet1.cell_value(row,3)
+    scenery_dict[key]=value
 
 
 
