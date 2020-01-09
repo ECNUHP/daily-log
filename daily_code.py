@@ -227,6 +227,11 @@ for row in range(sheet1.nrows):
     scenery_dict[key]=value
 
 
+#在py文件中要导入上级目录下的文件，需要将路径加载进来
+
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
 
 
 
