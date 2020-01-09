@@ -234,5 +234,40 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
 
 
+#把分好词的长文本序列按照标点符号划分成句子列表
 
+def split_chinese_sentence(text):
+    """
+    Segment a input Chinese text into a list of sentences.
+    :param text: a segmented input string.
+    :return: a list of segmented sentences.
+    """
+    if type(text) == list:  # already segmented
+        words = text
+    else:
+        words = str(text).split()
+    start = 0
+    i = 0
+    sents = []
+    punt_list = '。!！?？;；~～'
+    for word in words:
+        word = word
+        token = list(words[start:i + 2]).pop()
+        if word in punt_list and token not in punt_list:
+            sents.append(words[start:i + 1])
+            start = i + 1
+            i += 1
+        else:
+            i += 1
+            token = list(words[start:i + 2]).pop()
+
+    if start < len(words):
+        sents.append(words[start:])
+
+
+    sents = [" ".join(x) for x in sents]
+    return sents
+
+text='你好 今天 我 是 。 但是 你 知道吗 ？ 我 不知道 。'
+print(split_chinese_sentence(text))
 
