@@ -110,9 +110,10 @@ To date，迄今为止
 To elaborate, 详细阐述
 
 
-
-
-
+We empirically demonstrate the impact of the
+answer separation in following three ways: the rare appearance of the target answer in the generated questions, 
+the better prediction of interrogative words, and the higher attention weights of the <a> token to interrogative words.
+我们从以下三种方式来证明答案分离模块的作用: ......
 
 
 
