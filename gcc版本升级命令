@@ -1,0 +1,29 @@
+下载
+wget http://ftp.gnu.org/gnu/gcc/gcc-5.5.0/gcc-5.5.0.tar.gz
+解压
+tar -xvf gcc-5.5.0.tar.gz
+切换目录：
+cd gcc-5.5.0
+执行脚本自动下载、安装依赖包
+./contrib/download_prerequisites 
+
+
+mkdir objdir  
+cd objdir
+../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/opt/lang.huo/soft/gcc-5.5 --enable-threads=posix
+
+make -j128
+make install
+
+
+vim ~/.bashrc
+
+
+export PATH=/opt/lang.huo/soft/gcc-5.5/bin:/opt/lang.huo/soft/gcc-5.5/lib64:$PATH
+export LD_LIBRARY_PATH=/opt/lang.huo/soft/gcc-5.5/lib/:$LD_LIBRARY_PATH
+
+source ~/.bashrc
+
+
+
+其中路径：/opt/lang.huo/soft/gcc-5.5   是gcc新版本的安装路径
