@@ -40,3 +40,25 @@ tail -f nohup.log来实时查看日志了。
 
 
 linux命令查询
+
+
+斯坦福文本标注工具：包括
+the part-of-speech (POS) tagger, 
+the named entity recognizer (NER), 
+the parser, 
+the coreference resolution system, 
+sentiment analysis, 
+bootstrapped pattern learning, 
+and the open information extraction tools.
+
+工具网址：https://stanfordnlp.github.io/CoreNLP/
+
+
+
+
+
+
+
+
+
+
