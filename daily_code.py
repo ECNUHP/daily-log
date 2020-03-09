@@ -271,3 +271,14 @@ def split_chinese_sentence(text):
 text='你好 今天 我 是 。 但是 你 知道吗 ？ 我 不知道 。'
 print(split_chinese_sentence(text))
 
+
+
+
+当py文件下有相对路径的时候,为了方便其他文件调用，路径这样写不会有找不到路径的问题
+os.path.join(os.path.dirname(__file__),'model/esim_48.ckpt')
+
+
+
+
+
+
