@@ -1,0 +1,46 @@
+获取安装包：
+curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.6.tgz
+
+解压 安装包：
+tar -zxvf mongodb-linux-x86_64-3.0.6.tgz
+
+给解压后的文件重命名：
+mv mongodb-linux-x86_64-3.0.6 mongodb
+
+
+添加bin文件到环境变量，只针对当前用户有效
+vim ~/.bashrc 
+//在最后一行添上：
+export PATH=/opt/lang.huo/package/mongodb/bin:$PATH
+
+然后执行路径生效命令：
+source ~/.bashrc
+
+
+然后进入mongodb 文件夹内创建data/db和logs文件夹，以及mongodb.conf文件目录：
+
+cd mongodb
+mkdir data/db
+mkdir logs
+
+
+mongodb.conf文件内容如下所示，指明路径参数
+
+port=27017
+
+dbpath=/opt/lang.huo/package/mongodb/data/db
+
+logpath=/opt/lang.huo/package/mongodb/logs/mongodb.log
+
+pidfilepath=/opt/lang.huo/package/mongodb/mongo.pid
+
+fork=true
+
+logappend=true
+
+#auth=true
+
+
+进入bin目录启动mongodb
+
+./mongod --config /opt/lang.huo/package/mongodb/mongodb.conf 
