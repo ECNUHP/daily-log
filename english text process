@@ -1,0 +1,15 @@
+#利用Sspacy 对英文文本进行词性标注pos，命名实体识别ner，实体检测，语法解析树等
+安装：
+pip install spacy
+python -m spacy download en
+
+#code
+
+import spacy
+NLP = spacy.load("en")
+# prevent tokenizer split special tokens
+
+doc = NLP('Weather is good, very windy and sunny. China is a big country. We have no classes in the afternoon.')
+for token in doc:
+    print(token,token.pos_,token.tag_,token.ent_type_,token.ent_iob_,token.dep_)
+    
