@@ -366,5 +366,7 @@ print(res)
 text="what's the weather like ? what's "
 print(clean_sentence(text))正则表达式，替换字符
 
+获取当前文件路径，可根据嵌套的深度不端添加 os.path.dirname
+os.path.dirname(os.path.abspath(__file__))
 
 
